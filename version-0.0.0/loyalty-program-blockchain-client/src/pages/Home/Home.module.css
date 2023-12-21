@@ -1,0 +1,104 @@
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.rewards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.productCard,
+.redeemCard {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.redeemCard {
+  border: none;
+}
+
+.productCardImage,
+.redeemCardImage {
+  width: 100%;
+  flex: 1;
+  max-height: 200px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.productCardImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.redeemCardImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.productCardImage img:hover {
+  transform: scale(1.05);
+}
+
+.productCardName,
+.redeemCardName {
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0;
+  margin-top: 0.5rem;
+}
+
+.productCardPrice,
+.redeemCardPrice {
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.productCardPrice::before,
+.redeemCardPrice::before {
+  content: "₹ ";
+}
+
+.productCard .buy,
+.redeemCard .buy {
+  outline: 0;
+  border: none;
+  border-radius: 6px;
+  width: calc(100% - 8px);
+  padding: 8px;
+  background-color: #f1f2f4;
+  margin: 4px;
+  cursor: pointer;
+}
+
+.productCard .buy:disabled,
+.redeemCard .buy:disabled {
+  cursor: not-allowed;
+}
+
+.productCard .buy:hover,
+.redeemCard .buy:hover {
+  background-color: hsl(206, 96%, 43%);
+  color: #f1f2f4;
+}
+
+.productCard .buy:disabled:hover,
+.redeemCard .buy:disabled:hover {
+  background-color: #f1f2f4;
+  color: #bcbcbc;
+}

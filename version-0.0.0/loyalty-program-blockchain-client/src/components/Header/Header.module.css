@@ -1,0 +1,81 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  height: 60px;
+  background-color: #fff;
+  margin-bottom: 4px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  list-style: none;
+}
+
+.navbar li {
+  font-size: 18px;
+}
+
+.navbar li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.navbar li a:hover {
+  color: #0070f3;
+}
+
+.button {
+  display: inline-block;
+  padding: 8px 12px;
+  border-radius: 5px;
+  outline: 0;
+  border: 0;
+  background-color: #f0f5ff;
+  color: #0070f3;
+  font-size: 16px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #0070f3;
+  color: #fff;
+}
+
+.account {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.account span {
+  padding: 5px 10px;
+  background-color: #f0f5ff;
+  border-radius: 5px;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  height: 36px;
+  width: auto;
+  margin-top: 4px;
+}
+
+.logo_text {
+  height: 28px;
+  width: auto;
+  margin-top: 8px;
+  margin-right: 10px;
+}

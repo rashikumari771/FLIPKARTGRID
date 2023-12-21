@@ -1,0 +1,83 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: min(360px, 100%);
+  border-radius: 12px;
+  background-color: transparent;
+  padding: 2rem 1rem;
+  text-align: center;
+  gap: 1rem;
+  border: 1px solid hsl(210, 94%, 24%);
+}
+
+.avatar {
+  width: 100%;
+  height: auto;
+  max-width: 80px;
+  max-height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.bio {
+  color: #fff;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 0.5rem 1rem;
+}
+
+.name {
+  margin: 0;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1rem;
+  letter-spacing: 0.03rem;
+}
+
+.work {
+  margin: 0;
+  margin-top: 0.2rem;
+  color: #ccc;
+  font-weight: 400;
+  font-size: 0.8rem;
+  letter-spacing: 0.03rem;
+}
+
+.about {
+  margin: 0;
+  margin-top: 0.8rem;
+  color: #ccc;
+  font-weight: 400;
+  font-size: 0.8rem;
+  letter-spacing: 0.03rem;
+  line-height: 1.4;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 1rem;
+}
+
+.contact a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.1s ease-in-out;
+}
+
+.contact a:hover {
+  background-color: #fff;
+  color: #000;
+}
